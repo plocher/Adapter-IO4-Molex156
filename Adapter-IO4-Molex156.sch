@@ -215,6 +215,56 @@ Standard 8.5x11 US Letter frame</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Aesthetics">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="VCC2">
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="DGND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="VCC" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="VCC2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="DGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 <library name="SPCoast">
 <packages>
 <package name="RJ25-PANEL">
@@ -340,27 +390,6 @@ Standard 8.5x11 US Letter frame</description>
 <text x="3.81" y="3.81" size="1.4224" layer="49">1</text>
 <text x="-4.826" y="1.778" size="1.4224" layer="49">6</text>
 </package>
-<package name="KK-156-6">
-<description>&lt;b&gt;KK 156 HEADER&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
-<wire x1="11.73" y1="4.95" x2="9.93" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="9.93" y1="4.95" x2="-9.905" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-9.905" y1="4.95" x2="-11.705" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-11.705" y1="4.95" x2="-11.705" y2="-4.825" width="0.2032" layer="21"/>
-<wire x1="-11.705" y1="-4.825" x2="11.73" y2="-4.825" width="0.2032" layer="21"/>
-<wire x1="11.73" y1="-4.825" x2="11.73" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-9.905" y1="2.525" x2="9.93" y2="2.525" width="0.2032" layer="21"/>
-<wire x1="9.93" y1="2.525" x2="9.93" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-9.905" y1="2.525" x2="-9.905" y2="4.95" width="0.2032" layer="21"/>
-<pad name="1" x="-9.9" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="2" x="-5.94" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="3" x="-1.98" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="4" x="1.98" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="5" x="5.94" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="6" x="9.9" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<text x="-12.4" y="-4.445" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="13.67" y="-4.445" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
 <package name="OSHW-LOGO-M">
 <polygon width="0.15" layer="21">
 <vertex x="0.6578" y="-1.588" curve="9.499253"/>
@@ -472,6 +501,27 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <vertex x="0.4186" y="-1.0105"/>
 </polygon>
 </package>
+<package name="KK-156-6">
+<description>&lt;b&gt;KK 156 HEADER&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
+<wire x1="11.73" y1="4.95" x2="9.93" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="9.93" y1="4.95" x2="-9.905" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-9.905" y1="4.95" x2="-11.705" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-11.705" y1="4.95" x2="-11.705" y2="-4.825" width="0.2032" layer="21"/>
+<wire x1="-11.705" y1="-4.825" x2="11.73" y2="-4.825" width="0.2032" layer="21"/>
+<wire x1="11.73" y1="-4.825" x2="11.73" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-9.905" y1="2.525" x2="9.93" y2="2.525" width="0.2032" layer="21"/>
+<wire x1="9.93" y1="2.525" x2="9.93" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-9.905" y1="2.525" x2="-9.905" y2="4.95" width="0.2032" layer="21"/>
+<pad name="1" x="-9.9" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="2" x="-5.94" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="3" x="-1.98" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="4" x="1.98" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="5" x="5.94" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="6" x="9.9" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<text x="-12.4" y="-4.445" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="13.67" y="-4.445" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="JACK6">
@@ -521,17 +571,6 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <pin name="4" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
 <pin name="5" x="-2.54" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="1"/>
 <pin name="6" x="-2.54" y="-7.62" visible="pad" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-<symbol name="MV">
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
-<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-<symbol name="M">
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
-<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 </symbol>
 <symbol name="OSHW-LOGO">
 <rectangle x1="-9.5059" y1="-9.0106" x2="-9.4043" y2="-8.9979" layer="94"/>
@@ -4087,6 +4126,17 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <vertex x="0.6834" y="-1.65"/>
 </polygon>
 </symbol>
+<symbol name="MV">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="M">
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
+<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-RJ25" prefix="CON" uservalue="yes">
@@ -4139,6 +4189,32 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="DOC-OSHW-LOGO-" prefix="OSHW">
+<description>Open Source Hardware Logo
+This logo indicates the piece of hardware it is found on incorporates a OSHW license and/or adheres to the definition of open source hardware
+http://freedomdefined.org/OSHW   Creative Commons - Attribution - ShareAlike 3.0
+</description>
+<gates>
+<gate name="DOC-OSHW-LOGO" symbol="OSHW-LOGO" x="-5.08" y="-5.08"/>
+</gates>
+<devices>
+<device name="S" package="OSHW-LOGO-S">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="M" package="OSHW-LOGO-M">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="L" package="OSHW-LOGO-L">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="KK-156-6" prefix="X" uservalue="yes">
 <description>&lt;b&gt;KK 156 HEADER&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
@@ -4171,32 +4247,6 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DOC-OSHW-LOGO-" prefix="OSHW">
-<description>Open Source Hardware Logo
-This logo indicates the piece of hardware it is found on incorporates a OSHW license and/or adheres to the definition of open source hardware
-http://freedomdefined.org/OSHW   Creative Commons - Attribution - ShareAlike 3.0
-</description>
-<gates>
-<gate name="DOC-OSHW-LOGO" symbol="OSHW-LOGO" x="-5.08" y="-5.08"/>
-</gates>
-<devices>
-<device name="S" package="OSHW-LOGO-S">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="M" package="OSHW-LOGO-M">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="L" package="OSHW-LOGO-L">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -4213,6 +4263,8 @@ http://freedomdefined.org/OSHW   Creative Commons - Attribution - ShareAlike 3.0
 <part name="U$1" library="SPCoast" deviceset="DOC-OSHW-LOGO-" device="M"/>
 <part name="J4" library="SPCoast" deviceset="CONNECTOR-RJ25" device="-6P6C"/>
 <part name="X1" library="SPCoast" deviceset="KK-156-6" device=""/>
+<part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4220,7 +4272,7 @@ http://freedomdefined.org/OSHW   Creative Commons - Attribution - ShareAlike 3.0
 <text x="109.22" y="86.36" size="1.778" layer="104" rot="R90">3.5mm 6-pin</text>
 <text x="152.4" y="27.94" size="3.81" layer="104">IOShield Breakout</text>
 <text x="208.28" y="27.94" size="3.81" layer="104">RJ11 adapter</text>
-<text x="236.22" y="7.62" size="3.81" layer="104">v1.0</text>
+<text x="236.22" y="7.62" size="3.81" layer="104">v1.1</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -4233,15 +4285,20 @@ http://freedomdefined.org/OSHW   Creative Commons - Attribution - ShareAlike 3.0
 <instance part="X1" gate="-4" x="119.38" y="96.52" rot="R180"/>
 <instance part="X1" gate="-5" x="119.38" y="99.06" rot="R180"/>
 <instance part="X1" gate="-6" x="119.38" y="101.6" rot="R180"/>
+<instance part="SUPPLY1" gate="1" x="124.46" y="101.6"/>
+<instance part="GND1" gate="1" x="124.46" y="86.36"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="VCC" class="0">
 <segment>
-<wire x1="129.54" y1="101.6" x2="121.92" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="101.6" x2="124.46" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="J4" gate="J" pin="1"/>
 <pinref part="X1" gate="-6" pin="S"/>
+<pinref part="SUPPLY1" gate="1" pin="VCC"/>
+<wire x1="124.46" y1="101.6" x2="121.92" y2="101.6" width="0.1524" layer="91"/>
+<junction x="124.46" y="101.6"/>
 </segment>
 </net>
 <net name="IO1" class="0">
@@ -4274,9 +4331,12 @@ http://freedomdefined.org/OSHW   Creative Commons - Attribution - ShareAlike 3.0
 </net>
 <net name="GND" class="0">
 <segment>
-<wire x1="129.54" y1="88.9" x2="121.92" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="88.9" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="J4" gate="J" pin="6"/>
 <pinref part="X1" gate="-1" pin="S"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="124.46" y1="88.9" x2="121.92" y2="88.9" width="0.1524" layer="91"/>
+<junction x="124.46" y="88.9"/>
 </segment>
 </net>
 </nets>
