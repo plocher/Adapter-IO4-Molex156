@@ -6,3 +6,4 @@ fab_date: 2014-02
 status: released
 release: yes
 image_path: Adapter-IO4-Molex156-Graphic.png
+tags: [eagle, SPCoast, Adapter]
