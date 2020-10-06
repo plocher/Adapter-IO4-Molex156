@@ -4260,7 +4260,7 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun" deviceset="FRAME-LETTER" device=""/>
-<part name="U$1" library="SPCoast" deviceset="DOC-OSHW-LOGO-" device="M"/>
+<part name="U$1" library="SPCoast" deviceset="DOC-OSHW-LOGO-" device="M" value="OSHW"/>
 <part name="J4" library="SPCoast" deviceset="CONNECTOR-RJ25" device="-6P6C" value="RJ12/6"/>
 <part name="X1" library="SPCoast" deviceset="KK-156-6" device="" value="0.156"/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
